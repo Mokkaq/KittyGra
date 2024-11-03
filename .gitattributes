@@ -1,0 +1,18 @@
+# Wymuszanie końca linii LF dla plików Unity
+*.asset text eol=lf
+*.meta text eol=lf
+*.json text eol=lf
+*.txt text eol=lf
+*.shader text eol=lf
+*.inputactions text eol=lf
+*.controller text eol=lf
+*.anim text eol=lf
+*.unity text eol=lf
+*.scenetemplate text eol=lf
+*.mat text eol=lf
+*.hlsl text eol=lf
+*.shadergraph text eol=lf
+*.cginc text eol=lf
+*.wlt text eol=lf
+*.cs text eol=lf
+
