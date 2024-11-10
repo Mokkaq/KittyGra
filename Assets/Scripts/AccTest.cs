@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class Update_PlayerController : MonoBehaviour
 {
     public float moveSpeed = 5.0f; // Prêdkoœæ ruchu kota
     public float screenLimitX = 2.5f; // Maksymalne przesuniêcie w osi X (dostosuj do ekranu)
