@@ -1,14 +1,20 @@
+
 using UnityEngine;
 
-public class BakgroundScroller_2 :MonoBehaviour
+public class backgroundScroller : MonoBehaviour
 {
-    public Transform Player;
-    void Update()
+    public float scrollSpeed = 0.5f;
+    private Vector2 offset;
+    private Material mat;
+
+    void Start()
     {
-        if (Player.position.y > transform.position.y)
-        {
-            transform.position = new Vector2(transform.position.x, Player.position.y);
-        }
+        mat = GetComponent<Renderer>().material;
+        offset = new Vector2(0, scrollSpeed);
     }
 
+    void Update()
+    {
+        mat.mainTextureOffset += offset * Time.deltaTime;
+    }
 }

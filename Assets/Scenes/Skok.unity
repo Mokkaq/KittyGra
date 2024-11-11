@@ -150,8 +150,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   platformPrefab: {fileID: 1971623947}
   player: {fileID: 325596063}
-  spawnHeight: 5
-  platformSpacing: 2
+  spawnHeight: 4
+  platformSpacing: 3
 --- !u!4 &29579034
 Transform:
   m_ObjectHideFlags: 0
@@ -311,10 +311,9 @@ GameObject:
   - component: {fileID: 325596063}
   - component: {fileID: 325596062}
   - component: {fileID: 325596061}
-  - component: {fileID: 325596060}
   - component: {fileID: 325596065}
-  - component: {fileID: 325596067}
   - component: {fileID: 325596066}
+  - component: {fileID: 325596067}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -322,20 +321,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &325596060
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 325596059}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a39a1773655a23746965dc5ff5744b32, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 5
-  screenLimitX: 2.5
 --- !u!50 &325596061
 Rigidbody2D:
   serializedVersion: 5
@@ -344,14 +329,14 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 325596059}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -362,7 +347,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!212 &325596062
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -427,7 +412,7 @@ Transform:
   m_GameObject: {fileID: 325596059}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.01, y: -4.04, z: 0}
+  m_LocalPosition: {x: 0.069, y: -2.624, z: 0}
   m_LocalScale: {x: 3.1571026, y: 3.215212, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -478,11 +463,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 325596059}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec41282e56117274ea744f558e087f19, type: 3}
+  m_Script: {fileID: 11500000, guid: 5949c7b31c7f1054ea0d47538577a38e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
-  jumpForce: 5
+  bounceForce: 8
+  fallLimit: -10
 --- !u!114 &325596067
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -492,9 +477,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 325596059}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c26d00b6028865e4692da7579cc92fe5, type: 3}
+  m_Script: {fileID: 11500000, guid: c71d012dba5ad2c4ea44c8e5b530db0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveSpeed: 3
+  screenLimitX: 2.5
 --- !u!1 &492337877
 GameObject:
   m_ObjectHideFlags: 0
@@ -507,7 +494,7 @@ GameObject:
   - component: {fileID: 492337878}
   m_Layer: 0
   m_Name: background
-  m_TagString: "t\u0142o"
+  m_TagString: Background
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -524,7 +511,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 075218e7c5cfe2447b8564ecfab9fe71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
+  scrollSpeed: 0
 --- !u!4 &492337879
 Transform:
   m_ObjectHideFlags: 0
@@ -704,7 +691,6 @@ GameObject:
   m_Component:
   - component: {fileID: 980925979}
   - component: {fileID: 980925978}
-  - component: {fileID: 980925980}
   m_Layer: 0
   m_Name: tlo2_0
   m_TagString: "t\u0142o"
@@ -782,19 +768,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &980925980
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 980925976}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 075218e7c5cfe2447b8564ecfab9fe71, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Player: {fileID: 980925979}
 --- !u!1 &1086210880
 GameObject:
   m_ObjectHideFlags: 0
@@ -808,6 +781,8 @@ GameObject:
   - component: {fileID: 1086210881}
   - component: {fileID: 1086210884}
   - component: {fileID: 1086210885}
+  - component: {fileID: 1086210886}
+  - component: {fileID: 1086210887}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -946,6 +921,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cde6227907590844c8dabe8b91d950d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1086210886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086210880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c58f2c3c801d76d48b31ae2994446ea9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 325596063}
+  offset: 2
+--- !u!114 &1086210887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086210880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c4dcc678cd210f40b08956c5fd3e5f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  backgroundHeight: 10
+  scrollSpeed: 0.5
 --- !u!1001 &1326351234
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1455,9 +1458,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2095582828}
+  - component: {fileID: 2095582829}
   m_Layer: 0
   m_Name: jump
-  m_TagString: GameController
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1477,6 +1481,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2095582829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2095582827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5949c7b31c7f1054ea0d47538577a38e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bounceForce: 10
+  fallLimit: -10
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
