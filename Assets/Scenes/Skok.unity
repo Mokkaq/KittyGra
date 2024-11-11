@@ -482,51 +482,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 3
   screenLimitX: 2.5
---- !u!1 &492337877
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 492337879}
-  - component: {fileID: 492337878}
-  m_Layer: 0
-  m_Name: background
-  m_TagString: Background
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &492337878
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 492337877}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 075218e7c5cfe2447b8564ecfab9fe71, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scrollSpeed: 0
---- !u!4 &492337879
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 492337877}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.1400001, y: -4.69, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &558176508
 GameObject:
   m_ObjectHideFlags: 0
@@ -761,12 +716,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 980925976}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.0431, y: -0.1969, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.0431, y: -0.1969, z: 10}
   m_LocalScale: {x: 0.36321664, y: 0.5397259, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1086210883}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1086210880
 GameObject:
@@ -782,7 +737,7 @@ GameObject:
   - component: {fileID: 1086210884}
   - component: {fileID: 1086210885}
   - component: {fileID: 1086210886}
-  - component: {fileID: 1086210887}
+  - component: {fileID: 1086210888}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -863,6 +818,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1797726440}
+  - {fileID: 980925979}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1086210884
@@ -935,7 +891,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 325596063}
   offset: 2
---- !u!114 &1086210887
+--- !u!114 &1086210888
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -944,11 +900,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1086210880}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c4dcc678cd210f40b08956c5fd3e5f1, type: 3}
+  m_Script: {fileID: 11500000, guid: 7fada00a9fd12fc42bb01efddb6f4c64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  backgroundHeight: 10
-  scrollSpeed: 0.5
 --- !u!1001 &1326351234
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1458,7 +1412,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2095582828}
-  - component: {fileID: 2095582829}
   m_Layer: 0
   m_Name: jump
   m_TagString: Ground
@@ -1481,26 +1434,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2095582829
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2095582827}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5949c7b31c7f1054ea0d47538577a38e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bounceForce: 10
-  fallLimit: -10
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1086210883}
-  - {fileID: 980925979}
   - {fileID: 558176511}
   - {fileID: 325596063}
   - {fileID: 1326351234}
@@ -1508,4 +1446,3 @@ SceneRoots:
   - {fileID: 1396562856}
   - {fileID: 29579034}
   - {fileID: 2095582828}
-  - {fileID: 492337879}
