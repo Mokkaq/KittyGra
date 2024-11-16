@@ -1,11 +1,12 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using TMPro;
 
 public class PauseManager : MonoBehaviour
 {
     public GameObject pauseMenuPanel; // Panel menu pauzy
-    public Text rankingText;          // Tekst na ranking 
+    public TMP_Text rankingText;
 
     void Start()
     {
@@ -17,8 +18,8 @@ public class PauseManager : MonoBehaviour
     {
         // W³¹cz menu pauzy i zatrzymaj czas gry
         pauseMenuPanel.SetActive(true);
-        Time.timeScale = 0; 
-        UpdateRanking();
+        Time.timeScale = 0;
+        //UpdateRanking();
     }
 
 
@@ -27,33 +28,26 @@ public class PauseManager : MonoBehaviour
     public void ResumeGame()
     {
         pauseMenuPanel.SetActive(false);
-        Time.timeScale = 1; 
+        Time.timeScale = 1;
     }
 
     // Funkcja do powrotu do menu g³ównego
     public void GoToMainMenu()
     {
-        SceneManager.LoadScene("Menu"); 
+        Time.timeScale = 1;
+        SceneManager.LoadScene("Menu");
     }
 
 
-
-
-    //do ogarniecia
-
-    // Funkcja do aktualizacji rankingu
-    private void UpdateRanking()
+  /*  private void UpdateRanking()
     {
         // Przyk³adowe wyniki rankingu
         int[] lastScores = { 100, 95, 90, 85, 80 };
 
-        // Wyœwietlanie wyników rankingu w polu tekstowym
         rankingText.text = "Ranking:\n";
         for (int i = 0; i < lastScores.Length; i++)
         {
-            rankingText.text += (i + 1) + ". " + lastScores[i] + "\n";
+            rankingText.text += $"{i + 1}. {lastScores[i]}\n";
         }
-    }
-
-  
+    }*/
 }
