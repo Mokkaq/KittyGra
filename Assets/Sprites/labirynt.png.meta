@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9185acda09681af4aaee22718fab634c
+guid: 152eb8f541589854a88034679d44ebfd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4007835608349859182
-    second: tlo_0
+      213: 769535454291914228
+    second: labirynt_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tlo_0
+      name: labirynt_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 100
-        height: 200
+        width: 64
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2922526afbe4168c0800000000000000
-      internalID: -4007835608349859182
+      spriteID: 4fd63232b60fdaa00800000000000000
+      internalID: 769535454291914228
       vertices: []
       indices: 
       edges: []
@@ -174,7 +174,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      tlo_0: -4007835608349859182
+      labirynt_0: 769535454291914228
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
