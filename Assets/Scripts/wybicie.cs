@@ -1,5 +1,5 @@
 using UnityEngine;
-using UnityEngine.SceneManagement; // Dodaj, aby obs³ugiwaæ resetowanie sceny
+using UnityEngine.SceneManagement; // Obs³uga resetowania sceny
 
 public class PlayerBounce : MonoBehaviour
 {
@@ -8,14 +8,18 @@ public class PlayerBounce : MonoBehaviour
 
     private Rigidbody2D rb;
 
+    // Referencja do mened¿era punktacji
+    public ScoreManager scoreManager;
+
     void Start()
     {
+        // Pobieramy komponent Rigidbody2D przypisany do gracza
         rb = GetComponent<Rigidbody2D>();
     }
 
     void Update()
     {
-        // Sprawdzenie, czy obiekt spad³ poza ekran
+        // Sprawdzenie, czy obiekt spad³ poni¿ej okreœlonego poziomu
         if (transform.position.y < fallLimit)
         {
             // Reset sceny
@@ -28,8 +32,14 @@ public class PlayerBounce : MonoBehaviour
         // Sprawdzenie, czy kolizja jest z ground lub platform
         if (collision.gameObject.CompareTag("Ground") || collision.gameObject.CompareTag("Platform"))
         {
-            // Dodanie impulsu si³y w górê, aby uzyskaæ efekt odbicia
+            // Dodanie si³y w górê, aby postaæ siê odbi³a
             rb.AddForce(Vector2.up * bounceForce, ForceMode2D.Impulse);
+
+            // Jeœli kolizja jest z platform¹, zwiêksz wynik
+            if (collision.gameObject.CompareTag("Platform"))
+            {
+                scoreManager.AddPoint();
+            }
         }
     }
 }

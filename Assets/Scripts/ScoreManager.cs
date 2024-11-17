@@ -1,24 +1,20 @@
 using UnityEngine;
-using TMPro; 
+using TMPro;
 
 public class ScoreManager : MonoBehaviour
 {
-    public TMP_Text scoreText;    
-    private int score = 0;
-
-    void Start()
-    {
-        UpdateScoreText();
-    }
+    public TextMeshProUGUI scoreText;
+    private int score = 0;           
 
     public void AddPoint()
     {
-        score++;
+        score++; 
         UpdateScoreText();
     }
 
+    
     private void UpdateScoreText()
     {
-        scoreText.text = "Score: " + score;
+        scoreText.text = "Score: " + score; 
     }
 }
