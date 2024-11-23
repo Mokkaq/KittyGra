@@ -1,53 +1,53 @@
 using UnityEngine;
 
-public class Platformspawner : MonoBehaviour
+public class PlatformSpawner : MonoBehaviour
 {
-    public GameObject platformPrefab;    // Prefab platformy, któr¹ chcemy generowaæ
-    public Transform player;             // Transform gracza, aby œledziæ jego wysokoœæ
-    public float spawnHeight = 5f;       // Odleg³oœæ w pionie, na jakiej pojawi¹ siê nowe platformy
-    public float platformSpacing = 2f;   // Odleg³oœæ miêdzy kolejnymi platformami
-    private float highestYPosition;      // Najwy¿sza pozycja platform, do której ju¿ stworzyliœmy platformy
+    public GameObject platformPrefab;    // Prefab platformy
+    public Transform player;             // Transform gracza do œledzenia jego pozycji
+    public float spawnHeight = 4f;       // Odleg³oœæ w pionie, na jakiej pojawi¹ siê nowe platformy
+    public float platformSpacing = 3f;   // Odleg³oœæ miêdzy kolejnymi platformami w osi Y
+    public float xSpawnRange = 2.5f;     // Zakres losowego rozmieszczenia platform w osi X
+
+    private float highestYPosition;      // Wysokoœæ ostatniej wygenerowanej platformy
 
     void Start()
     {
+        // Ustaw pocz¹tkow¹ wysokoœæ na poziomie gracza
         highestYPosition = player.position.y;
+
+        // Generuj pocz¹tkowe platformy
         GenerateInitialPlatforms();
     }
 
     void Update()
     {
-        // Sprawdzamy, czy gracz siê zbli¿a do najwy¿szej pozycji, i tworzymy nowe platformy
+        // Generuj now¹ platformê, jeœli gracz zbli¿y siê do najwy¿ej po³o¿onej platformy
         if (player.position.y > highestYPosition - spawnHeight)
         {
-            SpawnPlatformRow();
+            SpawnPlatform(); // Tworzy now¹ platformê
         }
     }
 
     void GenerateInitialPlatforms()
     {
-        // Tworzymy pocz¹tkowe platformy w scenie
+        // Generuj kilka pocz¹tkowych platform w równych odstêpach
         for (int i = 0; i < 5; i++)
         {
-            // Ustawiamy platformy na pocz¹tku na ustalonych pozycjach z losowym przesuniêciem X
-            Vector2 spawnPosition = new Vector2(Random.Range(-1.5f, 1.5f), i * platformSpacing);
+            Vector2 spawnPosition = new Vector2(Random.Range(-xSpawnRange, xSpawnRange), highestYPosition + (i * platformSpacing));
             Instantiate(platformPrefab, spawnPosition, Quaternion.identity);
         }
 
-        // Ustawiamy najwy¿sz¹ pozycjê dla nowych platform
-        highestYPosition = 5 * platformSpacing;
+        // Aktualizuj najwy¿sz¹ pozycjê na podstawie ostatniej wygenerowanej platformy
+        highestYPosition += 5 * platformSpacing;
     }
 
-    void SpawnPlatformRow()
+    void SpawnPlatform()
     {
-        // Generujemy now¹ liniê platform w przypadkowych pozycjach poziomych
-        for (int i = 0; i < 1; i++) // Tworzymy 3 platformy na jednej wysokoœci
-        {
-            // Ograniczamy zakres X, aby platformy pojawia³y siê w odpowiednich miejscach na ekranie
-            Vector2 spawnPosition = new Vector2(Random.Range(-1.5f, 1.5f), highestYPosition + platformSpacing);
-            Instantiate(platformPrefab, spawnPosition, Quaternion.identity);
-        }
+        // Generuj now¹ platformê na kolejnej wysokoœci z losowym przesuniêciem w osi X
+        Vector2 spawnPosition = new Vector2(Random.Range(-xSpawnRange, xSpawnRange), highestYPosition);
+        Instantiate(platformPrefab, spawnPosition, Quaternion.identity);
 
-        // Aktualizujemy najwy¿sz¹ pozycjê
+        // Aktualizuj najwy¿sz¹ pozycjê platformy
         highestYPosition += platformSpacing;
     }
 }

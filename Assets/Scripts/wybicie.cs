@@ -3,8 +3,8 @@ using UnityEngine.SceneManagement;
 
 public class PlayerBounce : MonoBehaviour
 {
-    public float bounceForce = 10f; // Si�a odbicia
-    public float fallLimit = -5f;  // Wysoko��, przy kt�rej gra si� resetuje
+    public float bounceForce = 12f; // Si�a odbicia
+    public float fallLimit = -10f;  // Wysoko��, przy kt�rej gra si� resetuje
 
     private Rigidbody2D rb;
 
