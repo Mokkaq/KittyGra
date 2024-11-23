@@ -1,45 +1,34 @@
 using UnityEngine;
-using UnityEngine.SceneManagement; // Obs³uga resetowania sceny
+using UnityEngine.SceneManagement;
 
 public class PlayerBounce : MonoBehaviour
 {
-    public float bounceForce = 10f; // Si³a odbicia
-    public float fallLimit = -10f;  // Wysokoœæ, przy której gra siê resetuje
+    public float bounceForce = 10f; // Siï¿½a odbicia
+    public float fallLimit = -5f;  // Wysokoï¿½ï¿½, przy ktï¿½rej gra siï¿½ resetuje
 
     private Rigidbody2D rb;
 
-    // Referencja do mened¿era punktacji
-    public ScoreManager scoreManager;
-
     void Start()
     {
-        // Pobieramy komponent Rigidbody2D przypisany do gracza
-        rb = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>(); // Pobierz komponent Rigidbody2D przypisany do gracza
     }
 
     void Update()
     {
-        // Sprawdzenie, czy obiekt spad³ poni¿ej okreœlonego poziomu
+        // Reset gry, jeï¿½li gracz spadnie poniï¿½ej okreï¿½lonego poziomu
         if (transform.position.y < fallLimit)
         {
-            // Reset sceny
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        // Sprawdzenie, czy kolizja jest z ground lub platform
+        // Sprawdï¿½, czy gracz dotknï¿½ï¿½ "Ground" lub "Platform"
         if (collision.gameObject.CompareTag("Ground") || collision.gameObject.CompareTag("Platform"))
         {
-            // Dodanie si³y w górê, aby postaæ siê odbi³a
-            rb.AddForce(Vector2.up * bounceForce, ForceMode2D.Impulse);
-
-            // Jeœli kolizja jest z platform¹, zwiêksz wynik
-            if (collision.gameObject.CompareTag("Platform"))
-            {
-                scoreManager.AddPoint();
-            }
+            // Dodaj siï¿½ï¿½ w gï¿½rï¿½, aby gracz siï¿½ odbiï¿½
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, bounceForce);
         }
     }
 }
