@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Labirynt.unity
     guid: bd27a1d60a7ac9e4e8ed1b90928e20ff
+  - enabled: 1
+    path: Assets/Scenes/Skok.unity
+    guid: 057e178c0ff3e1e4b873ffd0403817e1
   m_configObjects:
     com.unity.adaptiveperformance.google.android.provider_settings: {fileID: 11400000, guid: e54357a1de741cd4595bcd4b1a35f98f, type: 2}
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: eeb8e2822ba3806409dd8990ccc08e4d, type: 2}

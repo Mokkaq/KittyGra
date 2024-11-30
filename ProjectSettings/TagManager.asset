@@ -5,14 +5,18 @@ TagManager:
   serializedVersion: 3
   tags:
   - Platform
+  - Ground
+  - "t\u0142o"
+  - Background
+  - Camera
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
-  - 
+  - Platform
   - 
   - 
   - 

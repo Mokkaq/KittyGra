@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: bb7565781ffdfb4448afc5067859b564
+guid: 8ce6cd894e178d541a2e264f5f32db58
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4933225360688942373
-    second: kotGlodny_0
+      213: -8224859547583822468
+    second: IMG_0065_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -97,7 +97,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: Android
+    buildTarget: iOS
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -123,20 +123,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: iOS
+    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -152,23 +139,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: kotGlodny_0
+      name: IMG_0065_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 2
-        width: 59
-        height: 57
+        x: 0
+        y: 0
+        width: 830
+        height: 142
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 13}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 52d00d40456567440800000000000000
-      internalID: 4933225360688942373
+      spriteID: c7549c291dd6bdd80800000000000000
+      internalID: -8224859547583822468
       vertices: []
       indices: 
       edges: []
@@ -177,7 +164,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 56e11b2079d78324e9007c9485b45d14
     internalID: 0
     vertices: []
     indices: 
@@ -187,7 +174,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      kotGlodny_0: 4933225360688942373
+      IMG_0065_0: -8224859547583822468
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
