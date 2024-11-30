@@ -1052,7 +1052,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1e69bca4f7ee3240b63e965896f8b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  platformPrefab: {fileID: 4972099342329884045, guid: c21109d67057f704ea21c2c4f0b00547, type: 3}
+  platformPrefab: {fileID: 0}
   numberOfPlatforms: 3
   minX: -2.5
   maxX: 2.5
