@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class labDoMenu : MonoBehaviour
+public class labDoMenuL : MonoBehaviour
 {
     public void doMenu()
     {
