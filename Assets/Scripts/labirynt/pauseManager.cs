@@ -1,53 +1,48 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
-using TMPro;
 
 public class PauseManager : MonoBehaviour
 {
     public GameObject pauseMenuPanel; // Panel menu pauzy
-    public TMP_Text rankingText;
 
     void Start()
     {
-        // Ukryj menu pauzy na pocz¹tku gry
+        // Ustaw panel menu pauzy jako nieaktywny na pocz¹tku gry
         pauseMenuPanel.SetActive(false);
     }
 
     public void TogglePause()
     {
-        // W³¹cz menu pauzy i zatrzymaj czas gry
-        pauseMenuPanel.SetActive(true);
-        Time.timeScale = 0;
-        //UpdateRanking();
+        if (pauseMenuPanel.activeSelf)
+        {
+            // Jeœli panel pauzy jest w³¹czony, wznowienie gry
+            ResumeGame();
+        }
+        else
+        {
+            // W³¹czenie pauzy
+            PauseGame();
+        }
     }
 
+    public void PauseGame()
+    {
+        // Aktywuj panel pauzy i zatrzymaj czas gry
+        pauseMenuPanel.SetActive(true);
+        Time.timeScale = 0; // Zatrzymanie czasu gry
+    }
 
-
-    // Funkcja do wznowienia gry
     public void ResumeGame()
     {
+        // Ukryj panel pauzy i wznow czas gry
         pauseMenuPanel.SetActive(false);
-        Time.timeScale = 1;
+        Time.timeScale = 1; // Wznowienie czasu gry
     }
 
-    // Funkcja do powrotu do menu g³ównego
     public void GoToMainMenu()
     {
-        Time.timeScale = 1;
+        // Powrót do menu g³ównego (nale¿y upewniæ siê, ¿e scena o nazwie "Menu" istnieje)
+        Time.timeScale = 1; // Wznowienie czasu przed zmian¹ sceny
         SceneManager.LoadScene("Menu");
     }
-
-
-  /*  private void UpdateRanking()
-    {
-        // Przyk³adowe wyniki rankingu
-        int[] lastScores = { 100, 95, 90, 85, 80 };
-
-        rankingText.text = "Ranking:\n";
-        for (int i = 0; i < lastScores.Length; i++)
-        {
-            rankingText.text += $"{i + 1}. {lastScores[i]}\n";
-        }
-    }*/
 }
