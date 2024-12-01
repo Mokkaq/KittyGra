@@ -1,46 +1,29 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
-public class LightSensorManager : MonoBehaviour
+public class LightSensorHandler : MonoBehaviour
 {
-    private AndroidJavaObject lightSensorHelper; // Referencja do klasy Java
-    public float lightLevel = 0f; // Aktualny poziom œwiat³a
-
     void Start()
     {
-        if (Application.platform == RuntimePlatform.Android)
+        // W³¹cz czujnik œwiat³a
+        if (LightSensor.current != null)
         {
-            // Utworzenie obiektu klasy Java
-            lightSensorHelper = new AndroidJavaObject("com.example.lightsensor.LightSensorHelper", GetUnityActivity());
-            lightSensorHelper.Call("startSensor");
+            InputSystem.EnableDevice(LightSensor.current);
+            Debug.Log("Light Sensor Enabled");
+        }
+        else
+        {
+            Debug.LogWarning("Light Sensor not available on this device.");
         }
     }
 
     void Update()
     {
-        if (Application.platform == RuntimePlatform.Android && lightSensorHelper != null)
+        // SprawdŸ, czy czujnik dzia³a, i odczytaj wartoœæ natê¿enia œwiat³a
+        if (LightSensor.current != null)
         {
-            // Pobranie poziomu œwiat³a
-            lightLevel = lightSensorHelper.Call<float>("getLightLevel");
-
-            // Dostosowanie jasnoœci ekranu (opcjonalnie)
-            float brightness = Mathf.Clamp01(lightLevel / 1000f); // Normalizacja wartoœci
-            Screen.brightness = brightness;
+            float lightLevel = LightSensor.current.lightLevel.ReadValue();
+            Debug.Log("Light Level: " + lightLevel);
         }
-    }
-
-    void OnDestroy()
-    {
-        if (Application.platform == RuntimePlatform.Android && lightSensorHelper != null)
-        {
-            // Zatrzymanie sensora
-            lightSensorHelper.Call("stopSensor");
-        }
-    }
-
-    // Metoda do pobrania kontekstu aktywnoœci Unity
-    private AndroidJavaObject GetUnityActivity()
-    {
-        AndroidJavaClass unityPlayer = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
-        return unityPlayer.GetStatic<AndroidJavaObject>("currentActivity");
     }
 }

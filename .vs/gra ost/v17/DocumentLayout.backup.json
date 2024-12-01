@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\wikaf\\OneDrive\\Pulpit\\Nowy folder (3)\\gra ost\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7D50EE62-8755-32D5-E438-84421A2668EE}|Assembly-CSharp.csproj|c:\\users\\wikaf\\onedrive\\pulpit\\nowy folder (3)\\gra ost\\assets\\nieusuwa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D50EE62-8755-32D5-E438-84421A2668EE}|Assembly-CSharp.csproj|solutionrelative:assets\\nieusuwa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7D50EE62-8755-32D5-E438-84421A2668EE}|Assembly-CSharp.csproj|c:\\users\\wikaf\\onedrive\\pulpit\\nowy folder (3)\\gra ost\\assets\\light.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7D50EE62-8755-32D5-E438-84421A2668EE}|Assembly-CSharp.csproj|solutionrelative:assets\\light.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -18,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,7 +30,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "PlayButton.cs",
               "DocumentMoniker": "C:\\Users\\wikaf\\OneDrive\\Pulpit\\Nowy folder (3)\\gra ost\\Assets\\Scripts\\skok\\PlayButton.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\skok\\PlayButton.cs",
@@ -38,7 +42,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "light.cs",
               "DocumentMoniker": "C:\\Users\\wikaf\\OneDrive\\Pulpit\\Nowy folder (3)\\gra ost\\Assets\\light.cs",
               "RelativeDocumentMoniker": "Assets\\light.cs",
@@ -47,6 +51,19 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-01T12:41:28.434Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "nieusuwa.cs",
+              "DocumentMoniker": "C:\\Users\\wikaf\\OneDrive\\Pulpit\\Nowy folder (3)\\gra ost\\Assets\\nieusuwa.cs",
+              "RelativeDocumentMoniker": "Assets\\nieusuwa.cs",
+              "ToolTip": "C:\\Users\\wikaf\\OneDrive\\Pulpit\\Nowy folder (3)\\gra ost\\Assets\\nieusuwa.cs",
+              "RelativeToolTip": "Assets\\nieusuwa.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T13:09:17.717Z",
               "EditorCaption": ""
             }
           ]
