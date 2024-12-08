@@ -23,27 +23,23 @@ public class PotrzebyManager : MonoBehaviour
 
     void Start()
     {
-        // Inicjalizacja pasków
+        // Ustaw wartoœci maksymalne sliderów
         pasekGlodu.maxValue = 100f;
         pasekSnu.maxValue = 100f;
         pasekPicia.maxValue = 100f;
 
-        pasekGlodu.value = poziomGlodu;
-        pasekSnu.value = poziomSnu;
-        pasekPicia.value = poziomPicia;
-
-        // Przypisanie funkcji do przycisków
-        karmPrzycisk.onClick.AddListener(OdnówGlod);
-        senPrzycisk.onClick.AddListener(OdnówSen);
-        piciePrzycisk.onClick.AddListener(OdnówPicie);
-
-        // Rozpoczêcie cyklicznego zmniejszania potrzeb
-        StartCoroutine(ZmniejszPotrzeby());
+        // Dodanie funkcji do przycisków
+        karmPrzycisk.onClick.AddListener(() => { ZachowaniePaskow.Instance.poziomGlodu += 5f; });
+        senPrzycisk.onClick.AddListener(() => { ZachowaniePaskow.Instance.poziomSnu += 5f; });
+        piciePrzycisk.onClick.AddListener(() => { ZachowaniePaskow.Instance.poziomPicia += 5f; });
     }
 
     void Update()
     {
-        // Mo¿esz dodaæ dowoln¹ logikê dotycz¹c¹ poziomów (np. ostrze¿enia, dŸwiêki itp.)
+        // Pobierz aktualne dane z ZachowaniePaskow i zaktualizuj suwaki
+        pasekGlodu.value = ZachowaniePaskow.Instance.poziomGlodu;
+        pasekSnu.value = ZachowaniePaskow.Instance.poziomSnu;
+        pasekPicia.value = ZachowaniePaskow.Instance.poziomPicia;
     }
 
     IEnumerator ZmniejszPotrzeby()
@@ -82,21 +78,21 @@ public class PotrzebyManager : MonoBehaviour
 
     void OdnówGlod()
     {
-        poziomGlodu += 5f; // Odnów 20% g³odu
+        poziomGlodu += 10f; 
         if (poziomGlodu > 100f) poziomGlodu = 100f;
         pasekGlodu.value = poziomGlodu;
     }
 
     void OdnówSen()
     {
-        poziomSnu += 5f; // Odnów 25% snu
+        poziomSnu += 8f; 
         if (poziomSnu > 100f) poziomSnu = 100f;
         pasekSnu.value = poziomSnu;
     }
 
     void OdnówPicie()
     {
-        poziomPicia += 5f; // Odnów 30% picia
+        poziomPicia += 5f; 
         if (poziomPicia > 100f) poziomPicia = 100f;
         pasekPicia.value = poziomPicia;
     }
