@@ -2,27 +2,15 @@ using UnityEngine;
 
 public class PointTrigger : MonoBehaviour
 {
-    private ScoreManager scoreManager;
+    public int punktyZaPrzejscie = 1; // Liczba punktów za przejœcie platformy
 
-    void Start()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        // ZnajdŸ ScoreManager w scenie za pomoc¹ nowej metody
-        scoreManager = Object.FindFirstObjectByType<ScoreManager>();
-        if (scoreManager == null)
+        // SprawdŸ, czy obiekt, który wchodzi w pole, to platforma
+        if (collision.CompareTag("Platform"))
         {
-            Debug.LogError("ScoreManager nie zosta³ znaleziony w scenie!");
-        }
-    }
-
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        // SprawdŸ, czy obiekt, który przeszed³ przez liniê, ma tag "Platform"
-        if (other.gameObject.CompareTag("Platform"))
-        {
-            if (scoreManager != null)
-            {
-                scoreManager.AddPoint();
-            }
+            // Dodaj punkty do wyniku
+            PunktyManL.Instance.DodajPunkty(punktyZaPrzejscie);
         }
     }
 }
