@@ -575,7 +575,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 399cbf592f3af5944a08faa5fb888934, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseMenuPanel: {fileID: 0}
+  pauseMenuPanel: {fileID: 362359610}
 --- !u!1 &474052438
 GameObject:
   m_ObjectHideFlags: 0
@@ -2099,7 +2099,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1216638552189311749, guid: 85200b320c029f64b86834269b317fb0, type: 3}
       propertyPath: m_LocalScale.x
-      value: 4.1272235
+      value: 2.7999084
       objectReference: {fileID: 0}
     - target: {fileID: 1216638552189311749, guid: 85200b320c029f64b86834269b317fb0, type: 3}
       propertyPath: m_LocalScale.y
@@ -2107,7 +2107,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1216638552189311749, guid: 85200b320c029f64b86834269b317fb0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.705
+      value: -2.1297
       objectReference: {fileID: 0}
     - target: {fileID: 1216638552189311749, guid: 85200b320c029f64b86834269b317fb0, type: 3}
       propertyPath: m_LocalPosition.y
