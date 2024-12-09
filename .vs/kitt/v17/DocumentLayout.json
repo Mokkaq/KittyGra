@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\wikaf\\OneDrive\\Pulpit\\Nowy folder (3)\\kitt\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A5D58DFA-4C1C-2CDB-1F93-22BB95114EFC}|Assembly-CSharp.csproj|c:\\users\\wikaf\\onedrive\\pulpit\\nowy folder (3)\\kitt\\assets\\nieusuwa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5D58DFA-4C1C-2CDB-1F93-22BB95114EFC}|Assembly-CSharp.csproj|solutionrelative:assets\\nieusuwa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5D58DFA-4C1C-2CDB-1F93-22BB95114EFC}|Assembly-CSharp.csproj|c:\\users\\wikaf\\onedrive\\pulpit\\nowy folder (3)\\kitt\\assets\\scripts\\skok\\playerplatformpassthrough.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5D58DFA-4C1C-2CDB-1F93-22BB95114EFC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\skok\\playerplatformpassthrough.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PlayerPlatformPassThrough.cs",
+              "DocumentMoniker": "C:\\Users\\wikaf\\OneDrive\\Pulpit\\Nowy folder (3)\\kitt\\Assets\\Scripts\\skok\\PlayerPlatformPassThrough.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\skok\\PlayerPlatformPassThrough.cs",
+              "ToolTip": "C:\\Users\\wikaf\\OneDrive\\Pulpit\\Nowy folder (3)\\kitt\\Assets\\Scripts\\skok\\PlayerPlatformPassThrough.cs",
+              "RelativeToolTip": "Assets\\Scripts\\skok\\PlayerPlatformPassThrough.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwBoAAAB2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T14:11:58.736Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "nieusuwa.cs",
+              "DocumentMoniker": "C:\\Users\\wikaf\\OneDrive\\Pulpit\\Nowy folder (3)\\kitt\\Assets\\nieusuwa.cs",
+              "RelativeDocumentMoniker": "Assets\\nieusuwa.cs",
+              "ToolTip": "C:\\Users\\wikaf\\OneDrive\\Pulpit\\Nowy folder (3)\\kitt\\Assets\\nieusuwa.cs",
+              "RelativeToolTip": "Assets\\nieusuwa.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T14:16:24.801Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
