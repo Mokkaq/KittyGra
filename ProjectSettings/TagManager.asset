@@ -13,11 +13,11 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Player
+  - postac
   - Water
   - UI
+  - UI
   - Platform
-  - 
   - 
   - 
   - 
@@ -45,6 +45,9 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: postac
+    uniqueID: 496813805
     locked: 0
   m_RenderingLayers:
   - Default
