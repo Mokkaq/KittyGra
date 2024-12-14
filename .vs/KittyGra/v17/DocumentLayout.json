@@ -1,16 +1,7 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\gagab\\Desktop\\KittyGra\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{C4084EAA-EA6E-7333-D1F7-4394BF3C23FF}|Assembly-CSharp.csproj|c:\\users\\gagab\\desktop\\kittygra\\assets\\scripts\\menu\\menudolab.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4084EAA-EA6E-7333-D1F7-4394BF3C23FF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\menu\\menudolab.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4084EAA-EA6E-7333-D1F7-4394BF3C23FF}|Assembly-CSharp.csproj|c:\\users\\gagab\\desktop\\kittygra\\assets\\scripts\\menu\\zmianaskina.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4084EAA-EA6E-7333-D1F7-4394BF3C23FF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\menu\\zmianaskina.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "WorkspaceRootPath": "C:\\Users\\wikaf\\OneDrive\\Pulpit\\KittyGra\\",
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -18,33 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": -1,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "menuDoLab.cs",
-              "DocumentMoniker": "C:\\Users\\gagab\\Desktop\\KittyGra\\Assets\\Scripts\\menu\\menuDoLab.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\menu\\menuDoLab.cs",
-              "ToolTip": "C:\\Users\\gagab\\Desktop\\KittyGra\\Assets\\Scripts\\menu\\menuDoLab.cs",
-              "RelativeToolTip": "Assets\\Scripts\\menu\\menuDoLab.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T13:25:28.481Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "zmianaSkina.cs",
-              "DocumentMoniker": "C:\\Users\\gagab\\Desktop\\KittyGra\\Assets\\Scripts\\menu\\zmianaSkina.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\menu\\zmianaSkina.cs",
-              "ToolTip": "C:\\Users\\gagab\\Desktop\\KittyGra\\Assets\\Scripts\\menu\\zmianaSkina.cs",
-              "RelativeToolTip": "Assets\\Scripts\\menu\\zmianaSkina.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAAADsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T12:32:28.334Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             }
           ]
         }

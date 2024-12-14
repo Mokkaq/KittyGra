@@ -21,17 +21,37 @@ public class PotrzebyManager : MonoBehaviour
 
     private float czasSpadku = 5f; // Co ile sekund potrzeby spadaj¹
 
+    public AudioClip dzwiekKarmienia; // DŸwiêk karmienia
+    public AudioClip dzwiekSpania; // DŸwiêk spania
+    public AudioClip dzwiekPicia; // DŸwiêk picia
+
+    private AudioSource audioSource; // Komponent AudioSource
+
     void Start()
     {
+        // Pobierz komponent AudioSource
+        audioSource = GetComponent<AudioSource>();
+
         // Ustaw wartoœci maksymalne sliderów
         pasekGlodu.maxValue = 100f;
         pasekSnu.maxValue = 100f;
         pasekPicia.maxValue = 100f;
 
         // Dodanie funkcji do przycisków
-        karmPrzycisk.onClick.AddListener(() => { ZachowaniePaskow.Instance.poziomGlodu += 5f; });
-        senPrzycisk.onClick.AddListener(() => { ZachowaniePaskow.Instance.poziomSnu += 5f; });
-        piciePrzycisk.onClick.AddListener(() => { ZachowaniePaskow.Instance.poziomPicia += 5f; });
+        karmPrzycisk.onClick.AddListener(() => {
+            ZachowaniePaskow.Instance.poziomGlodu += 5f;
+            PlaySound(dzwiekKarmienia); // Odtwórz dŸwiêk karmienia
+        });
+
+        senPrzycisk.onClick.AddListener(() => {
+            ZachowaniePaskow.Instance.poziomSnu += 5f;
+            PlaySound(dzwiekSpania); // Odtwórz dŸwiêk spania
+        });
+
+        piciePrzycisk.onClick.AddListener(() => {
+            ZachowaniePaskow.Instance.poziomPicia += 5f;
+            PlaySound(dzwiekPicia); // Odtwórz dŸwiêk picia
+        });
     }
 
     void Update()
@@ -76,24 +96,15 @@ public class PotrzebyManager : MonoBehaviour
         pasekPicia.value = poziomPicia;
     }
 
-    void OdnówGlod()
+    void PlaySound(AudioClip clip)
     {
-        poziomGlodu += 10f; 
-        if (poziomGlodu > 100f) poziomGlodu = 100f;
-        pasekGlodu.value = poziomGlodu;
-    }
-
-    void OdnówSen()
-    {
-        poziomSnu += 8f; 
-        if (poziomSnu > 100f) poziomSnu = 100f;
-        pasekSnu.value = poziomSnu;
-    }
-
-    void OdnówPicie()
-    {
-        poziomPicia += 5f; 
-        if (poziomPicia > 100f) poziomPicia = 100f;
-        pasekPicia.value = poziomPicia;
+        if (audioSource != null && clip != null)
+        {
+            audioSource.PlayOneShot(clip); // Odtwórz jednorazowy dŸwiêk
+        }
+        else
+        {
+            Debug.LogWarning("Brak przypisanego AudioSource lub AudioClip!");
+        }
     }
 }
