@@ -1,0 +1,111 @@
+\doxysection{Zachowanie\+Paskow Class Reference}
+\hypertarget{class_zachowanie_paskow}{}\label{class_zachowanie_paskow}\index{ZachowaniePaskow@{ZachowaniePaskow}}
+
+
+Klasa obsługująca globalne zarządzanie wskaźnikami potrzeb.  
+
+
+Inheritance diagram for Zachowanie\+Paskow\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_zachowanie_paskow}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_zachowanie_paskow_a09de9387aa2fec2f5797c7ba17d2b0ae}\label{class_zachowanie_paskow_a09de9387aa2fec2f5797c7ba17d2b0ae} 
+void {\bfseries Aktualizuj\+Poziomy} ()
+\begin{DoxyCompactList}\small\item\em Aktualizuje poziomy wskaźników w czasie rzeczywistym. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_zachowanie_paskow_a7152a049bdca211c7db40dd387786c21}{Odnów\+Glod}} (float ile)
+\begin{DoxyCompactList}\small\item\em Odnawia poziom głodu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_zachowanie_paskow_a2f5388b13067c28cf8848817cebb4eef}{Odnów\+Sen}} (float ile)
+\begin{DoxyCompactList}\small\item\em Odnawia poziom snu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_zachowanie_paskow_a7c033dda19adfd3301e6d5086c6d2ae7}{Odnów\+Picie}} (float ile)
+\begin{DoxyCompactList}\small\item\em Odnawia poziom picia. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_zachowanie_paskow_a75461f625f4ef9c723a7c85e958b51b5}\label{class_zachowanie_paskow_a75461f625f4ef9c723a7c85e958b51b5} 
+float {\bfseries poziom\+Glodu} = 100f
+\begin{DoxyCompactList}\small\item\em Poziom głodu gracza. \end{DoxyCompactList}\item 
+\Hypertarget{class_zachowanie_paskow_a4e0a6a123fc363e313347d69ad6b5323}\label{class_zachowanie_paskow_a4e0a6a123fc363e313347d69ad6b5323} 
+float {\bfseries poziom\+Snu} = 100f
+\begin{DoxyCompactList}\small\item\em Poziom snu gracza. \end{DoxyCompactList}\item 
+\Hypertarget{class_zachowanie_paskow_a750053d3bd516ba5d52eda4261673e64}\label{class_zachowanie_paskow_a750053d3bd516ba5d52eda4261673e64} 
+float {\bfseries poziom\+Picia} = 100f
+\begin{DoxyCompactList}\small\item\em Poziom picia gracza. \end{DoxyCompactList}\item 
+\Hypertarget{class_zachowanie_paskow_a1e17d101c935d9c136ed7297e4646117}\label{class_zachowanie_paskow_a1e17d101c935d9c136ed7297e4646117} 
+float {\bfseries czas\+Spadku} = 5f
+\begin{DoxyCompactList}\small\item\em Czas w sekundach dla spadku wskaźników. \end{DoxyCompactList}\item 
+\Hypertarget{class_zachowanie_paskow_abf66d8a897fa9de9fe49155918729b77}\label{class_zachowanie_paskow_abf66d8a897fa9de9fe49155918729b77} 
+float {\bfseries spadek\+Glodu} = 5f
+\begin{DoxyCompactList}\small\item\em Procent spadku głodu na jednostkę czasu. \end{DoxyCompactList}\item 
+\Hypertarget{class_zachowanie_paskow_abef760bafe06585077ea7b8ffebd751b}\label{class_zachowanie_paskow_abef760bafe06585077ea7b8ffebd751b} 
+float {\bfseries spadek\+Snu} = 3f
+\begin{DoxyCompactList}\small\item\em Procent spadku snu na jednostkę czasu. \end{DoxyCompactList}\item 
+\Hypertarget{class_zachowanie_paskow_a51942715933a5ef8930059d2b285b58e}\label{class_zachowanie_paskow_a51942715933a5ef8930059d2b285b58e} 
+float {\bfseries spadek\+Picia} = 4f
+\begin{DoxyCompactList}\small\item\em Procent spadku picia na jednostkę czasu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_zachowanie_paskow_ac04772a4ca3be6a741174dc658e33f76}\label{class_zachowanie_paskow_ac04772a4ca3be6a741174dc658e33f76} 
+static \mbox{\hyperlink{class_zachowanie_paskow}{Zachowanie\+Paskow}} {\bfseries Instance}
+\begin{DoxyCompactList}\small\item\em Singleton klasy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa obsługująca globalne zarządzanie wskaźnikami potrzeb. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_zachowanie_paskow_a7152a049bdca211c7db40dd387786c21}\index{ZachowaniePaskow@{ZachowaniePaskow}!OdnówGlod@{OdnówGlod}}
+\index{OdnówGlod@{OdnówGlod}!ZachowaniePaskow@{ZachowaniePaskow}}
+\doxysubsubsection{\texorpdfstring{OdnówGlod()}{OdnówGlod()}}
+{\footnotesize\ttfamily \label{class_zachowanie_paskow_a7152a049bdca211c7db40dd387786c21} 
+void Zachowanie\+Paskow.\+Odnów\+Glod (\begin{DoxyParamCaption}\item[{float}]{ile}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Odnawia poziom głodu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ile} & Ilość punktów do dodania. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_zachowanie_paskow_a7c033dda19adfd3301e6d5086c6d2ae7}\index{ZachowaniePaskow@{ZachowaniePaskow}!OdnówPicie@{OdnówPicie}}
+\index{OdnówPicie@{OdnówPicie}!ZachowaniePaskow@{ZachowaniePaskow}}
+\doxysubsubsection{\texorpdfstring{OdnówPicie()}{OdnówPicie()}}
+{\footnotesize\ttfamily \label{class_zachowanie_paskow_a7c033dda19adfd3301e6d5086c6d2ae7} 
+void Zachowanie\+Paskow.\+Odnów\+Picie (\begin{DoxyParamCaption}\item[{float}]{ile}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Odnawia poziom picia. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ile} & Ilość punktów do dodania. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_zachowanie_paskow_a2f5388b13067c28cf8848817cebb4eef}\index{ZachowaniePaskow@{ZachowaniePaskow}!OdnówSen@{OdnówSen}}
+\index{OdnówSen@{OdnówSen}!ZachowaniePaskow@{ZachowaniePaskow}}
+\doxysubsubsection{\texorpdfstring{OdnówSen()}{OdnówSen()}}
+{\footnotesize\ttfamily \label{class_zachowanie_paskow_a2f5388b13067c28cf8848817cebb4eef} 
+void Zachowanie\+Paskow.\+Odnów\+Sen (\begin{DoxyParamCaption}\item[{float}]{ile}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Odnawia poziom snu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ile} & Ilość punktów do dodania. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+menu/\mbox{\hyperlink{_zachowanie_paskow_8cs}{Zachowanie\+Paskow.\+cs}}\end{DoxyCompactItemize}

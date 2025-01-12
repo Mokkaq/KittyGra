@@ -1,0 +1,30 @@
+\doxysection{labirynt/\+Point\+Trigger.cs File Reference}
+\hypertarget{_point_trigger_8cs}{}\label{_point_trigger_8cs}\index{labirynt/PointTrigger.cs@{labirynt/PointTrigger.cs}}
+
+
+Skrypt obsługujący przyznawanie punktów za przejście platformy.  
+
+
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_point_trigger}{Point\+Trigger}}
+\begin{DoxyCompactList}\small\item\em Klasa odpowiedzialna za dodawanie punktów po przekroczeniu platformy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Skrypt obsługujący przyznawanie punktów za przejście platformy. 
+
+Ten skrypt wykrywa kolizję z obiektami oznaczonymi jako "{}\+Platform"{} i przyznaje graczowi punkty, wykorzystując singleton \doxylink{class_punkty_man_l}{Punkty\+ManL}.
+
+\begin{DoxyNote}{Note}
+Obiekt, do którego przypisany jest ten skrypt, musi posiadać komponent Collider2D ustawiony jako trigger.
+\end{DoxyNote}
+@dependencies Unity\+Engine
+
+\begin{DoxyAuthor}{Author}
+\mbox{[}Twój Autor\mbox{]} 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+\mbox{[}Data\mbox{]} 
+\end{DoxyDate}

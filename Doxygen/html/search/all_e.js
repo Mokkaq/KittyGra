@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['score_2ecs_0',['score.cs',['../score_8cs.html',1,'']]],
+  ['scoremanager_1',['ScoreManager',['../class_score_manager.html',1,'']]],
+  ['scoremanager_2',['scoreManager',['../class_platform_score_trigger.html#aa86dd11ba984f8339c06e3aa2d892072',1,'PlatformScoreTrigger']]],
+  ['scoretext_3',['scoreText',['../class_score_manager.html#a3f78c29eb1383e7d420ad055f4fe1386',1,'ScoreManager']]],
+  ['screenlimitx_4',['screenLimitX',['../class_update___player_controller.html#a472bda7145b707b618a72f66abbab268',1,'Update_PlayerController.screenLimitX'],['../class_update__player_controller.html#a9d6db84049afa3d944c1d7c1c213cfed',1,'Update_playerController.screenLimitX']]],
+  ['scroll_2ecs_5',['scroll.cs',['../scroll_8cs.html',1,'']]],
+  ['scrollspeed_6',['scrollSpeed',['../class_background_scroller.html#a79beb461eb7047c58c32feb6e3e201a4',1,'BackgroundScroller.scrollSpeed'],['../classbackground_scroller.html#a80a83e3391cf03cff1ad3d7c490f4fc5',1,'backgroundScroller.scrollSpeed'],['../classt_xC5_x82o__2_scroller.html#a4b1c7dd2a39e2c8a5e6f0ed485f019ff',1,'tło_2Scroller.scrollSpeed'],['../class_background_loop.html#a90dcd5ed03738afa02dd6fa6653cec5b',1,'BackgroundLoop.scrollSpeed']]],
+  ['showmenupanel_7',['ShowMenuPanel',['../class_menu_panel_controller.html#a49871fd3d75b2b96ea979ced4974861a',1,'MenuPanelController']]],
+  ['showpausemenu_8',['ShowPauseMenu',['../class_pause_menu_controller.html#a0c869252bb04bea749be719cdb47a87f',1,'PauseMenuController']]],
+  ['soundfood_2ecs_9',['soundFood.cs',['../sound_food_8cs.html',1,'']]],
+  ['spadekglodu_10',['spadekGlodu',['../class_zachowanie_paskow.html#abf66d8a897fa9de9fe49155918729b77',1,'ZachowaniePaskow']]],
+  ['spadekpicia_11',['spadekPicia',['../class_zachowanie_paskow.html#a51942715933a5ef8930059d2b285b58e',1,'ZachowaniePaskow']]],
+  ['spadeksnu_12',['spadekSnu',['../class_zachowanie_paskow.html#abef760bafe06585077ea7b8ffebd751b',1,'ZachowaniePaskow']]],
+  ['spawn_2ecs_13',['Spawn.cs',['../_spawn_8cs.html',1,'']]],
+  ['spawnheight_14',['spawnHeight',['../class_platformspawner.html#a90eec434c8c847943bfbfe3fe49df4e4',1,'Platformspawner.spawnHeight'],['../classplatform_spawner.html#a452b49b9f205edd89282e525ccf7a7a6',1,'platformSpawner.spawnHeight']]],
+  ['speed_15',['speed',['../class_player_movement.html#a6800716352b83358ea16bc706dd88cbb',1,'PlayerMovement']]],
+  ['statymanager_2ecs_16',['statyManager.cs',['../staty_manager_8cs.html',1,'']]],
+  ['sterowanie_2ecs_17',['sterowanie.cs',['../sterowanie_8cs.html',1,'']]]
+];
